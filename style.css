@@ -1,49 +1,115 @@
+/* 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+color combinations 
+color:#00af91; 
+        light green - major
+color:#007965;
+        dark green - lil major
+color:f58634;
+        orange - smaller
+color:ffcc29;
+        yellow- smallest
+
+    color used in logo - rgb(238, 128, 39)    
+*/
+html {
+    height: 100%;
+}
 body{
-    margin: 0px;
-    padding: 0px;
-    background: #262626;
+    /* background-color: rgb(202, 202, 202); */
+    background-image: url(images/logos/bg-green-gradient.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.skewedBox {
-    background: #edff57;
-    padding: 100px 0;
-    transform:skew(0deg,-10deg) translateY(-120px);
+.my-header{
+    height: 30vh;
+    margin-top: 2rem;
+    border: none;    
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
+    
 }
 
-.container {
-    transform: skew(0deg,10deg);
-    padding: 150px 200px;
+h3{
+    font-family: 'Oswald', sans-serif ;
+    font-weight: 700;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+}
+/*
+Try this - box-shadow: 0px 0px 21px -2px #333333; 
+ */
+.my-header-logo {
+    background-image: url(images/logos/logo-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.514);
+    background-position: 50% 10%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    
+
 }
 
-.container h1 {
-    margin: 0;
-    padding: 20px 0;
-    font-size: 3em;
-}
-.container p{
-    font-size: 1em;
-    margin: 0px;
-    padding: 0px;
-    line-height: 1.5em;
-    width: 80%;
+.my-header-title {
+    background-color: white;
+    background-image: url(images/logos/title-subtitle-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: 10% 65%;
+    border-left: 5px solid #f58634;    
 }
 
-.sec2{
-    padding: 0 200px 150px;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
+/* ==================cards=============== */
+.my-card {
+    height: 400px;
+    box-shadow: 0px 0px 21px -2px #333333; 
+    width: 93.5%;
+    margin: 2rem auto;
+
+    
 }
 
-.sec2 h1 {
-    margin: 0;
-    padding: 20px 0;
-    font-size: 3em;
+.my-img{
+    height: 100%;
+    background-image: url(images/good-ones/ac.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid black;
+
+    
 }
-.sec2 p{
-    font-size: 1em;
-    margin: 0px;
-    padding: 0px;
-    line-height: 1.5em;
-    width: 80%;
+
+.my-info {
+    padding: 2rem 1rem;
+    /* background: white; */
+    height: 100%;
+    /* border: 1px solid black; */
+    margin-bottom: 2rem;
+    color: black;
+
 }
+
+.my-info .btn {
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color: black;
+    color: white;
+    font-family:'Oswald', sans-serif;
+}
+
+div.my-card:nth-child(even) .my-img{
+    order: 2;
+}
+
+
