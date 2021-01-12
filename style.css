@@ -27,7 +27,7 @@ body{
     margin-bottom: 2rem;
 }
 .my-header{
-    height: 30vh;
+    height: 10rem;
     margin-top: 2rem;
     border: none;
     background: rgb(255, 255, 255);
@@ -72,6 +72,15 @@ Try this - box-shadow: 0px 0px 21px -2px #333333;
         width: 93.5%;
     }
     
+}
+
+@media only screen and (max-width:425px){
+    .my-header-title {
+        background-size: contain;
+    }
+    .my-header-logo {
+        background-size: contain;
+    }
 }
 /* ==================cards=============== */
 .card-container {
