@@ -6,34 +6,32 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 
 color combinations 
-color:#00af91; 
-        light green - major
-color:#007965;
-        dark green - lil major
-color:f58634;
-        orange - smaller
-color:ffcc29;
-        yellow- smallest
 
+
+ lighter pink #fcf1f1
+light pink #ffd5cd
+orange #f9813a
+black #1a1c20
+        <i class="fab fa-pagelines"></i>
 */
 html {
-    height: 100%;
+    
+    /* background-image: linear-gradient(#fcf1f1,#ffd5cd); */
+
 }
 body{
-    /* background-color: rgb(202, 202, 202); */
-    background-image: url(images/logos/bg-green-gradient.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+    background:#5f3d85
+    }
 
+.my-header-container{
+    margin-bottom: 2rem;
+}
 .my-header{
     height: 30vh;
     margin-top: 2rem;
-    border: none;    
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+    border: none;
+    background: rgb(255, 255, 255);
+
 
     
 }
@@ -49,12 +47,13 @@ p{
 /*
 Try this - box-shadow: 0px 0px 21px -2px #333333; 
  */
+
+ /* =======HEADER=============== */
 .my-header-logo {
-    background-image: url(images/logos/logo-1.png);
-    background-size: contain;
+    background-image: url(images/logos/card-bw-1.png);
+    background-size: 5.625rem 10.9375rem;
     background-repeat: no-repeat;
-    background-color: black;
-    background-position: 50% 10%;
+    background-position: 85% 40%;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     
@@ -62,52 +61,72 @@ Try this - box-shadow: 0px 0px 21px -2px #333333;
 }
 
 .my-header-title {
-    /* background-color: white; */
-    background-image: url(images/logos/title-subtitle.png);
+    background-image: url(images/logos/title-subtitle-1.png);
     background-repeat: no-repeat;
-    background-position: 10% 75%;
-    border-left: 5px solid rgb(238, 128, 39);    
+    background-position: 10% 45%;
+    /* border-left: 5px solid rgb(238, 128, 39);     */
 }
 
+@media only screen and (max-width:576px){
+    .my-header-container {
+        width: 93.5%;
+    }
+    
+}
 /* ==================cards=============== */
+.card-container {
+    max-width: 1100px;
+
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+
 .my-card {
-    height: 400px;
-    box-shadow: 0px 0px 21px -2px #333333; 
-    width: 93.5%;
-    margin: 2rem auto;
-
-    
-}
-
-.my-img{
-    height: 100%;
-    background-image: url(images/good-ones/ac.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border: 1px solid black;
-
-    
-}
-
-.my-info {
-    padding: 2rem 1rem;
-    /* background: white; */
-    height: 100%;
-    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    background: #f1f1f1;
     margin-bottom: 2rem;
-
 }
 
-.my-info .btn {
-    border: 1px solid black;
-    border-radius: 0px;
-    background-color: black;
-    color: white;
-    font-family:'Oswald', sans-serif;
+.my-card h3 {
+    margin-bottom: 2rem;
+}
+.my-card img {
+    height: 400px;
 }
 
-div.my-card:nth-child(even) .my-img{
+.my-card>div {
+    padding: 2rem;
+}
+.my-card:nth-child(even) img {
     order: 2;
 }
 
+.my-card .btn{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.my-card .btn:hover {
+    opacity: 0.8;
+} 
+
+@media(max-width:700px) {
+    .my-card {
+        display: block;
+    }
+}
 

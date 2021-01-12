@@ -1,0 +1,4 @@
+ lighter pink fcf1f1
+light pink ffd5cd
+orange f9813a
+black 1a1c20
