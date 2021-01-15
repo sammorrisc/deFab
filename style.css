@@ -32,7 +32,7 @@ header{
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   padding-top: 1rem;
   color: white;
 
@@ -376,7 +376,7 @@ padding:0.5rem;
 }
 
 .my-footer-address, .my-footer-callus, .my-footer-mailus {
-font-size: 30px;
+font-size: 18px;
 }
 
 .my-footer .fas {
