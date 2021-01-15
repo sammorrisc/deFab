@@ -5,8 +5,17 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 
+
+font-family: 'Great Vibes', cursive;
+font-family: 'Old Standard TT', serif;
 color combinations 
 
+light green - #00af91
+little dark green - #007965
+orange- #f58634
+yellow - #ffcc29
+
+yellow #ffe77aff
 
  lighter pink #fcf1f1
 light pink #ffd5cd
@@ -14,128 +23,213 @@ orange #f9813a
 black #1a1c20
         <i class="fab fa-pagelines"></i>
 */
-html {
-    
-    /* background-image: linear-gradient(#fcf1f1,#ffd5cd); */
-
+html{
+    scroll-behavior: smooth;
 }
-body{
-    background:#5f3d85
-    }
-
-.my-header-container{
-    margin-bottom: 2rem;
-}
-.my-header{
-    height: 10rem;
-    margin-top: 2rem;
-    border: none;
-    background: rgb(255, 255, 255);
-
-
-    
-}
-
-h3{
-    font-family: 'Oswald', sans-serif ;
-    font-weight: 700;
-}
-p{
-    font-family: 'Open Sans', sans-serif;
-    line-height: 2;
-}
-/*
-Try this - box-shadow: 0px 0px 21px -2px #333333; 
- */
-
- /* =======HEADER=============== */
-.my-header-logo {
-    background-image: url(images/logos/card-bw-1.png);
-    background-size: 5.625rem 10.9375rem;
+header{
+    background: url(images/background/5.jpg);
     background-repeat: no-repeat;
-    background-position: 85% 40%;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 80vh;
+    padding-top: 1rem;
+
 
 }
-
-.my-header-title {
-    background-image: url(images/logos/title-subtitle-1.png);
-    background-repeat: no-repeat;
-    background-position: 10% 45%;
-    /* border-left: 5px solid rgb(238, 128, 39);     */
+.new-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.288);
+    width: 40%;
+    margin: 0rem auto;
+    border-radius: 5px;
 }
-
-@media only screen and (max-width:576px){
-    .my-header-container {
-        width: 93.5%;
-    }
-    
-}
-
-@media only screen and (max-width:425px){
-    .my-header-title {
-        background-size: contain;
-    }
-    .my-header-logo {
-        background-size: contain;
-    }
-}
-/* ==================cards=============== */
-.card-container {
-    max-width: 1100px;
-
-    margin: auto;
-    overflow: auto;
-    padding: 0 2rem;
-}
-
-a{
-    color: #333;
+.new-navigation a{
     text-decoration: none;
+    color: #1a1c20;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+
+
 }
-img{
-    width: 100%;
+.new-navigation a:hover{
+    border-bottom: 1px dashed black;
 }
 
-.my-card {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 2rem;
-    background: #f1f1f1;
-    margin-bottom: 2rem;
-}
+header .my-logo-title {
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;
+    justify-content: center;
 
-.my-card h3 {
-    margin-bottom: 2rem;
 }
-.my-card img {
-    height: 400px;
-}
-
-.my-card>div {
-    padding: 2rem;
-}
-.my-card:nth-child(even) img {
-    order: 2;
-}
-
-.my-card .btn{
+header .my-logo {
+    width: 150px;
+    height: 150px;
+    background: url(images/logos/card-bw-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
-    background: black;
-    color: white;
-    padding: 0.8rem 1.8rem;
-    margin-top: 2rem;
-    cursor: pointer;
+    background-position: 70% 40%;
+    
+    
 }
-.my-card .btn:hover {
-    opacity: 0.8;
-} 
+header .vertical-line {
+    width: 2px;
+    height: 100px;
+    background-color: #f9813a;
+    margin: auto 2px
+}
 
-@media(max-width:700px) {
-    .my-card {
-        display: block;
+header .my-title{
+    width: 250px;
+    height: 150px;
+    background: url(images/logos/title-subtitle-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: 30% 60%;
+
+
+
+}
+
+
+@media only screen and (max-width:768px){
+    .new-navigation {
+        width: 60%;
+    }
+    .new-navigation a{
+        font-size: 0.9rem;
+    }   
+}
+@media only screen and (max-width:425px){
+    .new-navigation {
+        width: 80%;
     }
 }
 
+/*=============== gallery======================= */
+
+
+div.my-container:nth-child(even){
+    background-image: url(images/background/bulb-dark.png);
+    background-repeat: no-repeat;
+    background-size: 30% 30%;
+    background-position: -3% -5%;
+    background-color: #f9813a;
+    border-top-width: 3px;
+    border-top-style: groove;
+    border-top-color:#525355;
+    
+  }
+  
+  div.my-container:nth-child(odd){
+    background-image: url(images/background/bulb-dark.png);
+    background-repeat: no-repeat;
+    background-size: 30% 30%;
+    background-position: -3% -5%;
+    background-color: rgb(125, 194, 69);
+    border-top-width: 3px;
+    border-top-style: groove;
+    border-top-color:#525355;
+    
+  }
+  
+  @media only screen and (min-width:768px){
+    div.my-container:nth-child(even){
+      
+      background-size: 12% 25%;
+      background-position: 3% -5%;
+  
+    
+    }
+    
+    div.my-container:nth-child(odd){
+      background-size: 12% 25%;
+      background-position: 3% -5%;
+  
+    
+    }
+  
+  }
+  .my-container {
+    height: 100vh;
+    padding-top: 5%;    
+  }
+  .my-container h1{
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  
+  
+  }
+  
+  .my-container h1 span{
+    font-weight: bolder;
+  }
+  .my-gallery-timeline{
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    justify-content: center;
+  }
+  .my-gallery-timeline a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color:white;
+    
+  }
+  
+  .my-container h3{
+    border-left: 3px solid black;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    font-weight: normal;
+  }
+  
+  .inner {
+    overflow: hidden;
+  }
+  
+  .inner img {
+    transition: all 1s ease;
+  }
+  
+  .inner img:hover {
+    transform: scale(1.2);
+    z-index:1 ;
+  }
+  
+  .my-button {
+    float: right;
+    margin: 4rem 2rem 2rem 2rem;
+  }
+  
+  @media only screen and (max-width:767.99px){
+    h3{
+      font-size: 1.1rem;
+    }
+    .my-col-card{
+      margin-bottom: 1rem;
+    }
+    .inner img{
+      width: 100%;
+      height: 100%;
+    }
+  }
