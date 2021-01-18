@@ -187,14 +187,11 @@ height: 100px;
   background-color: rgba(0, 0, 0, 1);
   padding: 20px 30px;
   text-align: center;
-  background-image: url(images/background/bulb.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 10% 50%;
-  border-radius: 50px;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
-
+  width: 100%;
+  border-left: 8px solid #f9813a;
+  border-right: 8px solid #f9813a;
 }
 .my-gallery-heading span {
   color: #f9813a;
@@ -253,6 +250,10 @@ height: 100px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+
+.my-caption{
+  margin: auto;
 }
 @media only screen and (max-width:768px) {
   .card{
