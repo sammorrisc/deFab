@@ -35,7 +35,7 @@ html{
   }
   header{
     
-    height: 50rem;
+    /* height: 50rem; */
     padding-top: 1rem;
     color: white;
   
@@ -142,40 +142,55 @@ html{
   }
   /* ====================ABOUT US============== */
   .my-about-container {
-    background-color: rgba(0, 0, 0, 0.315);
-    width: 90%;
-  
+    margin-top: 4rem;
+    border-left: 3px dashed #f9813a;
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 70%;
+    color: #f9813a;
+    box-shadow: 2px 2px 5px black;
+
   }
-  .my-about-heading h3{
+  .my-about-heading h1{
     font-family: 'Oswald', sans-serif;
     border-bottom: 3px solid #f9813a;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
     display: inline-block;
-  }
-  
-  .my-about-us {
-  
-  }
-  
-  .my-about-headshot{
-    background-image: url(images/about-us/pexels-andrea-piacquadio-3777943.jpg);
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    border-radius: 50%;
-  
+
   }
   
   .my-aboutme {
-    min-height: 250px;
-    min-width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 20px;
+
+  }
+
+  @media only screen and (max-width:768px){
+    .my-about-container{
+        width: 97%;
+    }   
   }
   /* ======================== */
+
+.my-gallery-heading {
+    margin: 1rem auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 20px 30px;
+    text-align: center;
+    background-image: url(images/background/bulb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    border-radius: 50px;
+}
+.my-gallery-heading span {
+    color: #f9813a;
+}
   .my-gallery-fluid {
     padding: 5px;
     background:transparent;
@@ -184,7 +199,8 @@ html{
     
     background-color: white;
     padding-top: 1rem;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 2px 2px 5px black;
+
     /* border-radius: 3px; */
     border-left: 7px solid #f9813a;
     border-top-right-radius: 10px;
@@ -214,7 +230,7 @@ html{
   } */
   
   .inner img {
-    transition: all 1.4s ease;
+    transition: all 0.5s ease;
     
   }
   
