@@ -150,15 +150,23 @@ height: 100px;
   background-color: white;
   padding-top: 1rem;
   box-shadow: 0px 0px 10px black;
-  border-radius: 3px;
+  /* border-radius: 3px; */
+  border-left: 7px solid #f9813a;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin: 10px auto;
 }
 .my-container h3{
   font-family: 'Oswald', sans-serif;
-  border-left: 3px solid #f9813a;
-  padding-left: 1rem;
+  border-bottom: 3px solid #f9813a;
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
   font-size: 1.5rem;
+  display: inline-block;
+}
+
+.my-container p{
+  font-style: italic;
 }
 @media only screen and (max-width:425px) {
 .my-container h3{
@@ -199,11 +207,7 @@ height: 100px;
   height: auto;
 }
 
-.my-caption h5{
-  margin-bottom: 1rem;
-  font-family: 'Oswald', sans-serif;
 
-}
 .card-img, .card-img-top {
   border-radius: calc(.25rem - 1px);
 }
