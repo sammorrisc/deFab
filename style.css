@@ -48,12 +48,14 @@ display: -ms-flexbox;
 display: -webkit-flex; 
 display: flex;
 justify-content: center;
-background-color: rgba(255, 255, 255);
+background-color: rgba(0, 0, 0, 0.712);
 width: 93%;
 
 margin:1.5rem auto;
 border-radius: 5px;
 padding: 0rem;
+box-shadow: 2px 0px 5px white;
+
 
 
 }
@@ -61,10 +63,11 @@ header .my-logo {
 width: 150px;
 height: 150px;
 background: url(images/logos/card-bw-1.png);
-background-size: contain;
 background-repeat: no-repeat;
 display: inline-block;
 background-position: 70% 40%;
+background-size: 69% 100%;
+
 
 
 }
@@ -77,7 +80,7 @@ margin: auto 2px
 header .my-title{
 width: 250px;
 height: 150px;
-background: url(images/logos/title-subtitle-2.png);
+background: url(images/logos/title-subtitle-3.png);
 background-size: contain;
 background-repeat: no-repeat;
 display: inline-block;
@@ -117,6 +120,7 @@ height: 100px;
     width: 700px;
     margin: 1rem auto;
     padding: 1rem 2rem;
+    box-shadow: 2px 2px 5px black;
 }
 
 .my-navigation a.nav-link{
@@ -136,64 +140,6 @@ height: 100px;
       width: 93%;
   }
 }
-
-/* 
-/* ======SUBTITLE================ */
-/* .my-subtitle {
-margin-left: 3rem;
-border: 2px solid orangered;
-border-left: none;
-width: 380px;
-height: calc(300px+1rem);
-word-wrap: break-word;
-display: inline-flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-background-color: rgba(0, 0, 0, 0.425);
-box-shadow: 0px 0px 0.5px black;
-padding: 1rem;
-border-radius: 20px;
-
-
-}
-.my-subtitle h1 {
-
-font-family: 'Oswald', sans-serif;
-font-family: 'Great Vibes', cursive;
-word-wrap: none;
-font-size: 40px;
-word-spacing: 2px;
-letter-spacing: 1px;
-word-wrap: break-word;
-
-
-} */
-/* .my-subtitle a{
-text-decoration: none;
-color:white;
-font-size: 1.3rem;
-border: 2px solid #f9813a;
-padding: 0.5rem 1.5rem;
-margin-top: 1rem;
-margin-bottom: 1rem;
-border-radius: 10px;} */
-
-/* font-family: 'Great Vibes', cursive; */
-
-
-/* @media only screen and (max-width:768px){
-.my-subtitle {
-  width: 270px;
-}
-.my-subtitle h1 {
-  font-size: 23px;
-}
-.my-subtitle a {
-  font-size: 20px;
-}
-} */
-
 
 .my-gallery-fluid {
   padding: 5px;
