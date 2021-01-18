@@ -1,13 +1,38 @@
+/* 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+
+font-family: 'Great Vibes', cursive;
+font-family: 'Old Standard TT', serif;
+color combinations 
+
+light green - #00af91
+little dark green - #007965
+orange- #f58634
+yellow - #ffcc29
+
+yellow #ffe77aff
+
+ lighter pink #fcf1f1
+light pink #ffd5cd
+orange #f9813a
+black #1a1c20
+        <i class="fab fa-pagelines"></i>
+*/
 html{
     scroll-behavior: smooth;
-}
-body {
+  }
+  body {
     background: url(images/background/6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
+  }
   header{
     
     height: 50rem;
@@ -23,12 +48,15 @@ body {
   display: -webkit-flex; 
   display: flex;
   justify-content: center;
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.712);
   width: 93%;
   
   margin:1.5rem auto;
   border-radius: 5px;
   padding: 0rem;
+  padding-top: 10px;
+  box-shadow: 2px 0px 5px white;
+  
   
   
   }
@@ -36,10 +64,11 @@ body {
   width: 150px;
   height: 150px;
   background: url(images/logos/card-bw-1.png);
-  background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
   background-position: 70% 40%;
+  background-size: 69% 100%;
+  
   
   
   }
@@ -52,7 +81,7 @@ body {
   header .my-title{
   width: 250px;
   height: 150px;
-  background: url(images/logos/title-subtitle-2.png);
+  background: url(images/logos/title-subtitle-3.png);
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -84,7 +113,7 @@ body {
   }
   /* =========navigation======= */
   .my-navigation{
-
+  
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -92,161 +121,138 @@ body {
       width: 700px;
       margin: 1rem auto;
       padding: 1rem 2rem;
-}
-
-.my-navigation a.nav-link{
+      box-shadow: 2px 2px 5px black;
+  }
+  
+  .my-navigation a.nav-link{
       text-decoration: none;
       color: white !important;
       text-transform: uppercase;
       font-weight: bold;
-}
-.my-navigation a.nav-link:hover{
-        color: #f9813a;
-        border-bottom: 2px dashed #f9813a;
-}
-
-@media only screen and (max-width:768px){
+  }
+  .my-navigation a.nav-link:hover{
+        color: #f9813a!important;
+  }
+  
+  @media only screen and (max-width:768px){
     .my-navigation{
         flex-direction: column;
         width: 93%;
     }
-}
-
- /* 
-  /* ======SUBTITLE================ */
-  /* .my-subtitle {
-  margin-left: 3rem;
-  border: 2px solid orangered;
-  border-left: none;
-  width: 380px;
-  height: calc(300px+1rem);
-  word-wrap: break-word;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: rgba(0, 0, 0, 0.425);
-  box-shadow: 0px 0px 0.5px black;
-  padding: 1rem;
-  border-radius: 20px;
-  
+  }
+  /* ====================ABOUT US============== */
+  .my-about-container {
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 90%;
   
   }
-  .my-subtitle h1 {
-  
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Great Vibes', cursive;
-  word-wrap: none;
-  font-size: 40px;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  word-wrap: break-word;
-  
-  
-  } */
-  /* .my-subtitle a{
-  text-decoration: none;
-  color:white;
-  font-size: 1.3rem;
-  border: 2px solid #f9813a;
-  padding: 0.5rem 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;} */
-  
-  /* font-family: 'Great Vibes', cursive; */
-  
- 
-  /* @media only screen and (max-width:768px){
-  .my-subtitle {
-    width: 270px;
+  .my-about-heading h3{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 3px solid #f9813a;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    display: inline-block;
   }
-  .my-subtitle h1 {
-    font-size: 23px;
+  
+  .my-about-us {
+  
   }
-  .my-subtitle a {
-    font-size: 20px;
+  
+  .my-about-headshot{
+    background-image: url(images/about-us/pexels-andrea-piacquadio-3777943.jpg);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+  
   }
-  } */
-
-
-.my-gallery-fluid {
+  
+  .my-aboutme {
+    min-height: 250px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* ======================== */
+  .my-gallery-fluid {
     padding: 5px;
     background:transparent;
-}
-.my-container {
+  }
+  .my-container {
     
     background-color: white;
     padding-top: 1rem;
     box-shadow: 0px 0px 10px black;
-    border-radius: 3px;
+    /* border-radius: 3px; */
+    border-left: 7px solid #f9813a;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     margin: 10px auto;
-}
-.my-container h3{
+  }
+  .my-container h3{
     font-family: 'Oswald', sans-serif;
-    border-left: 3px solid #f9813a;
-    padding-left: 1rem;
+    border-bottom: 3px solid #f9813a;
+    padding-bottom: 1rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
-}
-@media only screen and (max-width:425px) {
-.my-container h3{
+    display: inline-block;
+  }
+  
+  .my-container p{
+    font-style: italic;
+  }
+  @media only screen and (max-width:425px) {
+  .my-container h3{
     font-size: 1.2rem;
-}
-}
-
-.inner {
+  }
+  }
+  
+  /* .inner {
     overflow: hidden;
-}
-
-.inner img {
+  } */
+  
+  .inner img {
     transition: all 1.4s ease;
     
-}
-
-.inner img:hover {
+  }
+  
+  .inner img:hover {
     transform: scale(1.2);
     z-index:1 ;
-}
-
-.my-button {
-    float: right;
-    margin: 4rem 2rem 2rem 2rem;
-}
-.my-caption-cards {
+  }
+  
+  .my-caption-cards {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-}
-@media only screen and (max-width:768px) {
+  }
+  @media only screen and (max-width:768px) {
     .card{
         height: 100%;
         width: 100%;
     }
-}
-.card{
+  }
+  .card{
     border: none;
     height: auto;
-}
-.col-md-4  {
+  }
+  .col-md-4  {
     height: auto;
-}
-
-.my-caption h5{
-    margin-bottom: 1rem;
-    font-family: 'Oswald', sans-serif;
-
-}
-.card-img, .card-img-top {
+  }
+  
+  
+  .card-img, .card-img-top {
     border-radius: calc(.25rem - 1px);
-}
-
-/* =================FOOTER=========== */
-
-.my-footer-fluid{
+  }
+  
+  /* =================FOOTER=========== */
+  
+  .my-footer-fluid{
     background-color: black;
-}
-.my-footer {
+  }
+  .my-footer {
     color: white;
     font-family: 'Montserrat', sans-serif;
     width: 63%;
@@ -255,16 +261,16 @@ body {
     padding-bottom: 10px;
     
     
-}
-.my-footer h2{
+  }
+  .my-footer h2{
     position: relative;
     font-size: 34px;
     margin-bottom: 1.5rem;
     font-family: 'Oswald', sans-serif;
-
-}
-
-.my-footer .zebra-title {
+  
+  }
+  
+  .my-footer .zebra-title {
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -274,38 +280,43 @@ body {
     background-image: -webkit-linear-gradient(135deg, transparent 10%, #f9813a 10%, #f9813a 50%, transparent 50%, transparent 60%, #f9813a 60%, #f9813a);
     background-image: linear-gradient(-45deg, transparent 10%, #f9813a 10%, #f9813a 50%, transparent 50%, transparent 60%, #f9813a 60%, #f9813a);
     background-size: 7px 7px;
-}
-.my-footer h2 span{
+  }
+  .my-footer h2 span{
     color: #f9813a;
     
-}
-.my-footer h3{
+  }
+  .my-footer h3{
     font-size: 30px;
     /* text-align: center; */
     letter-spacing: 2px;
     /* padding:0.5rem; */
     font-family: 'Oswald', sans-serif;
-}
-
-.my-footer p{
+  }
+  
+  .my-footer p{
     letter-spacing: 2px;
     font-family: 'Quattrocento', serif;
-}
-
-.my-footer-address, .my-footer-callus, .my-footer-mailus, .my-footer-timings {
+  }
+  
+  .my-footer-address, .my-footer-callus, .my-footer-mailus, .my-footer-timings {
     display: flex;
     flex-direction: row;
     font-size: 18px;
-}
+  }
     
-.my-footer .fas, .my-footer .far {
+  .my-footer .fas, .my-footer .far {
     color: #f9813a;
     font-size: 24px;
     margin-right: 5px;
     
-}
-
-@media only screen and (max-width:768px) {
+  }
+  
+  .my-footer a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media only screen and (max-width:768px) {
     .my-footer {
         width: 93%;
     }
@@ -318,19 +329,17 @@ body {
     .my-footer-address, .my-footer-callus, .my-footer-mailus,.my-footer-timings {
         font-size: 10px;
     }
-
+  
     .my-footer .fas, .my-footer .far{
         font-size: 16px;
     }
     .my-footer .zebra-title {
         width: 44px;
     }
-}
-
-@media only screen and (max-width:375px) {
+  }
+  
+  @media only screen and (max-width:375px) {
     .my-footer-timings p{
         font-size: 8px;
     }
-}
-    
-    
+  }
