@@ -131,8 +131,7 @@ height: 100px;
     font-weight: bold;
 }
 .my-navigation a.nav-link:hover{
-      color: #f9813a;
-      border-bottom: 2px dashed #f9813a;
+      color: #f9813a!important;
 }
 
 @media only screen and (max-width:768px){
