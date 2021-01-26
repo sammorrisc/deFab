@@ -43,7 +43,20 @@ header{
 
 }
 
-header .my-logo-title {
+
+
+.my-header-image{
+    min-height: 100px;
+    background: url(images/logos/fabriqueFinalLogo.png);
+    background-size:contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px black, -3px -3px 10px black;
+}
+
+/* header .my-logo-title {
 display: -webkit-box;  
 display: -ms-flexbox;  
 display: -webkit-flex; 
@@ -111,7 +124,7 @@ height: 100px;
 }
 
 
-}
+} */
 /* =========navigation======= */
 .my-navigation{
 
